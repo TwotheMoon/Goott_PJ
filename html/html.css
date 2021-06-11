@@ -1,0 +1,22 @@
+p{
+    color: tomato;
+    font-family: "고딕";
+    font-size: 300%;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: 4px 4px 2px black;
+}
+
+ol{
+    list-style-type: square;
+}
+ul{
+    list-style-type: upper-roman;
+    list-style-image: url(C:\Users\2theMoon\OneDrive\Desktop\ETC\Wallpaper\chillHopRamen.jpg);
+}
+table, tr, td{
+    border: 1px solid pink;
+    caption-side: bottom;
+}
