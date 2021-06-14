@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Practice Homepage</title>
+</head>
+<body>
+    <div id="myLayout">
+        <!-- 탑 메뉴 -->
+        <div id="top">
+            <div id="top_left">
+                <img class="top_logo" onclick="img" src="img/img/cat.jpg">
+                <p id="homepage_name">동물 이미지 갤러리</p>
+            </div>
+            <img class="top_banner" src="img/img/banner_635x120.jpg">
+        </div>
+        <div id="top_menu">
+            <a href="#">개</a>
+            <a href="#">고양이</a>
+            <a href="#">토끼</a>
+        </div>
+    
+        <!-- 왼쪽 메뉴 -->
+        <div id="left">
+            <form method="POST" action="#.jsp">
+                <div id="left-signbox">
+                    <div class="signbox-line">
+                        <div class="signbox-header">로그인</div>
+                        <label for="signBox_id">아이디</label>
+                        <input class="signBox_id" type="text" placeholder="id" size="6" name="id" >
+                        <label for="signBox_pw">암호</label>
+                        <input class="signBox_pw" type="password" placeholder="password" size="6" name="pw">
+                        <div class="button_box">
+                            <input type="button" value="로그인">
+                            <input type="button" value="회원가입">
+                        </div>
+                    </div>
+                </div>
+            </form> <!-- form 끝 -->
+            <div class="second_box">
+                <div class="board_box">
+                    <h3 class="board_box_title">Board</h3>
+                </div>
+                <div class="contents_box_1">
+                    <a href="#">자유게시판</a>
+                    <a href="#">뉴스</a>
+                    <a href="#">버그/오류 제보 게시판</a>
+                </div>
+            </div>
+            <div class="third_box">
+                <div class="board_box">
+                    <h3 class="board_box_title">자랑하기</h3>
+                </div>
+                <div class="contents_box_2">
+                    <a href="#">우리 개는요</a>
+                    <a href="#">우리 고양이는요</a>
+                    <a href="#">우리 토끼는요</a>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <!-- 중앙 컨텐츠 -->
+        <div id="mid">
+            <div class="mid-imgbox">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+                <img src="img/img/rabbit.jpg">
+            </div>
+        </div>
+       
+        <div id="right">
+            <div class="right_box">
+                <img src="img/img/레플나라_470x150.gif">
+                <img src="img/img/레플나라_470x150.gif">
+                <img src="img/img/레플나라_470x150.gif">
+            </div>
+        </div>
+       
+        <div id="bot">
+            <div class="bot_header">(주)307 시스템</div>
+            <div class="bot_content">
+                COMPANY : (주)307시스템 , OWNER : 안성모<br>                
+                ADDRESS : [11111] 경기도 성남시 ㅇㅇ구 ㅇㅇ동 111-111<br>
+                TEL : 02) 1111-2222 , FAX : 02) 1111-2222, E-MAIL : aaa@aaa.co.kr<br>
+                COPYRIGHT 2007 307 system co. All Rights Reserved.
+            </div>
+        </div>
+</div>
+    <script>
+           // alert("테스트중입니다.");
+    </script>
+</body>
+</html>

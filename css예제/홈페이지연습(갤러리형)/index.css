@@ -1,0 +1,193 @@
+@import "reset.css";
+body{
+    background-image: url('https://upload3.inven.co.kr/upload/2021/02/25/bbs/i15745445892.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#myLayout{
+    width: 1600px;
+    background-color: wheat;
+    margin-left: auto;
+    margin-right: auto;
+}
+#top{
+    width: 1600px;
+    height: 140px;
+    background-color: red;
+}
+.top_logo{
+    width: 100px;
+    height: 100px;    
+    margin-left: 100px;
+    float: left;
+    margin-top: 18px;
+}
+#homepage_name{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    margin-top: 52px;
+    margin-left: 10px;
+}
+.top_banner{
+    width: 645px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#top_menu{
+    width: 200px;
+    height: 50px;  
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top_menu>a:hover{
+    color: tomato;
+    font-size: 25px;
+    font-weight: bold;
+}
+#top_menu>a:nth-child(2),
+#top_menu>a:nth-child(3){
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1px solid red;
+}
+#left{
+    width: 200px;
+    height: 800px;
+    background-color: orange;
+    float: left;
+}
+#left-signbox{
+    width: 180px;
+    height: 150px;
+    background-color: red;
+    margin: 10px auto;
+    padding-top: 15px;
+}
+.signbox-line{
+    width: 150px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid blue;
+    position: relative;
+}
+.signbox-header{
+    background-color: red;
+    position: absolute;
+    top: -8px;
+}
+.signBox_id{
+    margin-top: 20px;
+}
+.signBox_pw{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.button_box{
+    margin-top: 20px;
+    margin-left: 8px;
+}
+.second_box{
+    width: 180px;
+    height: 100px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+.board_box_title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkred;
+    padding: 5px;
+}
+.contents_box_1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.contents_box_1>a:hover{
+    color: teal;
+}
+.contents_box_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.contents_box_2>a:hover{
+    color: wheat;
+}
+.third_box{
+    width: 180px;
+    height: 100px;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#mid{
+    width: 1200px;
+    height: 800px;
+    background-color: yellow;
+    float: left;
+}
+.mid-imgbox{
+  
+}
+.mid-imgbox>img{
+    margin: 20px 23px;
+    width: 120px;
+    height: 180px;
+}
+
+#right{
+    width: 200px;
+    height: 800px;
+    background-color: green;
+    float: left;
+}
+.right_box{
+    width: 180px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right_box>img{
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+
+#bot{
+    width: 1600px;
+    height: 200px;
+    background-color: blue;
+    position: fixed;
+    bottom: 0px;
+}
+.bot_header{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: honeydew;
+    margin-left: 20px;
+}
+.bot_content{
+    margin-top: 20px;
+    font-size: 15px;
+    color: honeydew;
+    margin-left: 20px;
+    line-height: 18px;
+}
