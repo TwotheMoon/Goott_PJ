@@ -140,6 +140,7 @@ body{
     height: 800px;
     background-color: yellow;
     float: left;
+    overflow: scroll;
 }
 .mid-imgbox>img{
     margin: 20px 23px;
