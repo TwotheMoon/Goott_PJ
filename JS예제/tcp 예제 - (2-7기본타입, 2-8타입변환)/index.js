@@ -1,13 +1,6 @@
-//alert("hello world");
-//confirm("헬로월드");
-//prompt("What is your name" , 111);
-        //(String , value);
-
-//document.write("<h1>hello world<h1/>");
-
 document.write(); br();
 
-function br(){          // 줄 내림 함수
+function br(){
     document.write("<br>");
 }
 function hr(str){
