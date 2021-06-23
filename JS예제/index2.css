@@ -1,0 +1,9 @@
+#cat p:first-child{
+    color: wheat;
+}
+#cat p:nth-child(2){
+    color: blue;
+}
+#cat p:last-child{
+    color: red;
+}
