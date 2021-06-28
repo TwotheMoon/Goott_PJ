@@ -1,0 +1,62 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 800px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.top{
+    width: 800px;
+    height: 200px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .clock{
+        color: tomato;
+    }
+.left{
+    width: 200px;
+    height: 600px;
+    background-color: rosybrown;
+   float: left;
+}
+.mid{
+    width: 600px;
+    height: 600px;
+    background-color: silver;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+    .game_text{
+        margin-top: 150px;
+    }
+    .gameBoard{
+        margin-top: 200px;
+        width: 130px;
+        height: 50px;
+        background-color: tomato;
+        display: flex;
+        justify-content: space-between;
+    }
+.reset_btn{
+    margin-top: 30px;
+}
+.bot{
+    width: 800px;
+    height: 200px;
+    background-color: skyblue;
+    clear: right;
+}

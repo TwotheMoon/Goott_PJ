@@ -1,0 +1,50 @@
+.mainBox{
+    width: 800px;
+    height: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;    
+}
+.top{
+    width: 800px;
+    height: 200px;
+    background-color: red;
+}
+.left{
+    width: 100px;
+    height: 600px;
+    background-color: orange;
+    float: left;
+}
+.mid{
+    width: 700px;
+    height: 600px;
+    background-color: yellow;
+    float: left;
+}
+    #mid_top{
+        width: 700px;    
+        height: 100px;
+        background-color: wheat;
+    }
+    #mid_mid{
+        width: 700px;
+        height: 400px;
+        background-color: aquamarine;
+    }
+    #mid_bot{
+        width: 700px;
+        height: 100px;
+        background-color: cadetblue;
+    }
+    
+    
+
+
+.bot{
+    width: 800px;
+    height: 100px;
+    background-color: green;
+    clear: left;
+}
+
