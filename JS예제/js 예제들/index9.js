@@ -146,33 +146,55 @@ function br(){
 
 // 문제 36
 
-let a = 6;
-let b = 3; 
+//let a = 6;
+// let b = 3; 
 
-function run36add(a, b){
-    return a + b;
-}
-function run36sub(a, b){
-    return a - b;
-}
-function run36mul(a, b){
-    return a * b;
-}
-function run36div(a, b){
-    return a / b;
-}
+// function run36add(a, b){
+//     return a + b;
+// }
+// function run36sub(a, b){
+//     return a - b;
+// }
+// function run36mul(a, b){
+//     return a * b;
+// }
+// function run36div(a, b){
+//     return a / b;
+// }
 
 
-document.write("a, b 더하기 : " + run36add(a, b));
-br();
-document.write("a, b 빼기 : " + run36sub(a, b));
-br();
-document.write("a, b 곱하기 : " + run36mul(a, b));
-br();
-document.write("a, b 나누기 : " + run36div(a, b));
+// document.write("a, b 더하기 : " + run36add(a, b));
+// br();
+// document.write("a, b 빼기 : " + run36sub(a, b));
+// br();
+// document.write("a, b 곱하기 : " + run36mul(a, b));
+// br();
+// document.write("a, b 나누기 : " + run36div(a, b));
 
 
 
 // 문제 37
 
+// function plus(a, b){
+//     return a + b;
+// }
 
+// function minus(a, b){
+//     return a - b;
+// }
+
+// plus(2, 1);
+// minus(2, 1);
+
+
+// 문제 38
+
+function plus(a, b){
+    return a + b;
+}
+
+function minus(a, b){
+    return a - b;
+}
+
+document.write(plus(100, 200)); 
