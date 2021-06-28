@@ -1,3 +1,18 @@
+const clock = document.getElementById("clock");
+
+function getclock (){
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minuts = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+
+    clock.innerText = `${hours}:${minuts}:${seconds}`;
+}
+
+getclock();
+setInterval(getclock, 1000);
+
+
 function br(){
     document.write("<br>");
 }
@@ -119,10 +134,43 @@ function br(){
 
 // callOfNum(nNum);
 
-// 문제 35
+//문제 35
+
+// function multiply(a, b, c){
+//     let value = a * b * c;
+//     return value;
+// }
+
+// document.write(multiply(1, 2, 3)); 
 
 
 // 문제 36
+
+let a = 6;
+let b = 3; 
+
+function run36add(a, b){
+    return a + b;
+}
+function run36sub(a, b){
+    return a - b;
+}
+function run36mul(a, b){
+    return a * b;
+}
+function run36div(a, b){
+    return a / b;
+}
+
+
+document.write("a, b 더하기 : " + run36add(a, b));
+br();
+document.write("a, b 빼기 : " + run36sub(a, b));
+br();
+document.write("a, b 곱하기 : " + run36mul(a, b));
+br();
+document.write("a, b 나누기 : " + run36div(a, b));
+
 
 
 // 문제 37
