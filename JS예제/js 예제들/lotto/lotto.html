@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lotto.css">
+    <title>get My Money! Lotto!</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="top">
+            <h1> 로또 번호 당첨 확인 프로그램! </h1>
+        </div>
+        
+        <div class="left"></div>
+
+        <div class="mid">
+            <h2> 당신의 로또 번호를 적어주세요 </h2>
+                <div class="lottoNumBox">
+                    <span> 당신의 행운의 번호 : </span>
+                    <input type="text" id="input1">
+                    <input type="text" id="input2">
+                    <input type="text" id="input3">
+                    <input type="text" id="input4">
+                    <input type="text" id="input5">
+                    <input type="text" id="input6">
+                    <input class="mid-btn" type="button" value="Go!"> 
+                </div>
+                <div>
+                    <span> 당신의 번호는 : </span>
+                    <span id="userAllNum">  </span>
+                </div>
+                <div>
+                    <span> 당첨 번호 : </span>
+                    <span id="showLottoNum"></span>
+                </div>
+                <div>
+                    <span> 보너스 번호 : </span>
+                    <span id="showBonusNum"></span>
+                </div>
+                <div>
+                    <span> 당첨 등 수 :</span> 
+                    <span id="showYourPrize"></span>    
+                </div>
+        </div>
+        
+        <div class="bot"></div>
+    </div>
+    <script src="lotto.js"></script>
+</body>
+</html>
+
