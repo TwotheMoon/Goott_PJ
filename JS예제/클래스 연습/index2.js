@@ -36,57 +36,84 @@ function br(){
 // kitty.introduce("검정색");
 
 
-function Keyboard(){
-    this.num = 0;
-    this.keyboardType = "";
-    this.keyboardKeyQuantity = 0;
-    this.keyboardswitch = "";
 
-    this.introduce = function(){
-        dw(
-        "[num.]: "
-        + this.num
-        + " 키보드 재질 : " 
-        + this.keyboardType
-        + " 키 갯수 : "
-        + this.keyboardKeyQuantity
-        + " 스위치 : "
-        + this.keyboardswitch
-        )
-    };
-}
+// const vamilo = new Keyboard();
+// vamilo.keyboardName = "See Melody";
+// vamilo.keyboardType = "plastic";
+// vamilo.keyboardKeyQuantity = 87; 
+// vamilo.keyboardswitch = "V2 Rose";
 
-const vamilo = new Keyboard();
-vamilo.keyboardType = "plastic";
-vamilo.keyboardKeyQuantity = 87; 
-vamilo.keyboardswitch = "V2 Rose";
+// const moonCustum = new Keyboard();
+// moonCustum.keyboardName = "moon custum";
+// moonCustum.keyboardType = "aluminum";
+// moonCustum.keyboardKeyQuantity = 63;
+// moonCustum.keyboardswitch = "Tangerine 67g";
 
-const moonCustum = new Keyboard();
-moonCustum.keyboardType = "aluminum";
-moonCustum.keyboardKeyQuantity = 63;
-moonCustum.keyboardswitch = "Tangerine 67g";
+// const cox = new Keyboard();
+// cox.keyboardName = "Endever";
+// cox.keyboardType = "plastic";
+// cox.keyboardKeyQuantity = 108;
+// cox.keyboardswitch = "cherry red";
 
-const cox = new Keyboard();
-cox.keyboardType = "plastic";
-cox.keyboardKeyQuantity = 108;
-cox.keyboardswitch = "rcherry red";
-
-const ducky = new Keyboard();
-ducky.keyboardType = "plastic";
-ducky.keyboardKeyQuantity = 43;
-ducky.keyboardswitch = "gateton blue";
-
-
-const keyboards = [vamilo, moonCustum, cox, ducky];
-
-for(let i = 0; i < keyboards.length; i++){
-    keyboards[i].num = 1 + i;
-    keyboards[i].introduce();
-    br();
-}
-console.log(keyboards.length);
-console.log(keyboards.length);
+// const ducky = new Keyboard();
+// ducky.keyboardName = "ducky 0";
+// ducky.keyboardType = "plastic";
+// ducky.keyboardKeyQuantity = 43;
+// ducky.keyboardswitch = "gateron blue";
 
 
 
+// 배열에 키보드 타입이 plastic 인 객체 이름 프로퍼티 검색 출력
+// for(let i = 0; i < keyboards.length; i++){
+    //     if(keyboards[i].keyboardType == "plastic"){
+        //         dw(keyboards[i].keyboardName);
+        //         br();
+        //     }
+        
+        // }
+        
+        
+        function Keyboard(){
+            this.num = 0;
+            this.keyboardName = "";
+            this.keyboardType = "";
+            this.keyboardKeyQuantity = 0;
+            this.keyboardswitch = "";
+        
+            this.introduce = function(){
+                dw(
+                  "제품명 : "
+                + this.keyboardName + rand() + "<br>"
+                + "[num.]: "  
+                + this.num  + "<br>"
+                + " 키보드 재질 : " 
+                + this.keyboardType + "<br>"
+                + " 키 갯수 : "
+                + this.keyboardKeyQuantity + "<br>"
+                + " 스위치 : "
+                + this.keyboardswitch + "<br>"
+                )
+            };
+        }
+
+        function rand(){
+            let rendNum = Math.floor(Math.random() * 100 ) ; 
+            return rendNum;
+        }
+
+    
+        const keyboards = [, , , , , , , , , , ];
+        
+        for(let i = 0; i < keyboards.length; i++){
+            keyboards[i] = new Keyboard();
+            keyboards[i].num = 1 + i;
+            keyboards[i].keyboardName = "vamilo";
+            keyboards[i].keyboardType = "aluminum";
+            keyboards[i].keyboardKeyQuantity = rand();
+            keyboards[i].keyboardswitch = "charry red";
+            keyboards[i].introduce();
+            br();
+        }
+
+      
 
