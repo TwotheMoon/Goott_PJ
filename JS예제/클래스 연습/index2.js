@@ -85,6 +85,7 @@ for(let i = 0; i < keyboards.length; i++){
     br();
 }
 console.log(keyboards.length);
+console.log(keyboards.length);
 
 
 
