@@ -102,7 +102,7 @@ function br(){
         }
 
     
-        const keyboards = [, , , , , , , , , , ];
+        const keyboards = new Array(10);
         
         for(let i = 0; i < keyboards.length; i++){
             keyboards[i] = new Keyboard();
