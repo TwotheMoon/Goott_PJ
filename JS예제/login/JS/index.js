@@ -22,10 +22,14 @@ const members = [moon, kan, hoan];
 const idInput = document.getElementById("idInput");
 const pwInput = document.getElementById("pwInput");
 const loginBtn = document.getElementById("loginBtn");
+const logoutBtn = document.getElementById("logoutBtn");
+const signUpBtn = document.getElementById("signUpBtn");
 const loginBox = document.querySelector(".loginBox");
 const userInfo = document.getElementById("userInfo");
 let isFindId ;
 let isFindPw ;
+
+const clock = document.getElementById("clock");
 
 const HIDDEN_CLASSNAME = "hidden";
 
@@ -59,6 +63,9 @@ function clickOnLoginBtn(){
                 alert("로그인 성공");
                 loginBox.classList.add(HIDDEN_CLASSNAME);
                 onLoginSubmit(userLoginId, userLoginName, userLoginEmail);
+                loginBtn.classList.add(HIDDEN_CLASSNAME);
+                signUpBtn.classList.add(HIDDEN_CLASSNAME);
+                logoutBtn.classList.remove(HIDDEN_CLASSNAME);
             } else{
                 alert("비밀번호를 틀렸어요.");
             }
@@ -76,6 +83,22 @@ function onLoginSubmit(userId , name, email){
      userInfo.classList.remove(HIDDEN_CLASSNAME);
 }
 
+function clickOnLogoutBtn(){
+    location.reload();
+}
+
+function getClock(){
+    const date = new Date();
+    const hours = String(date.getHours()).padStart("2" , 0);
+    const minuts = String(date.getMinutes()).padStart("2" , 0);
+    const seconds = String(date.getSeconds()).padStart("2" , 0);
+
+    clock.innerText = `${hours}:${minuts}:${seconds}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
     
 loginBtn.addEventListener("click", clickOnLoginBtn);
 loginBox.addEventListener("submit", onLoginSubmit);
+logoutBtn.addEventListener("click", clickOnLogoutBtn);

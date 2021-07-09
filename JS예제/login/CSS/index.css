@@ -1,0 +1,74 @@
+.loadingBody{
+    height: 100vh;
+    background-color: #6bbcbe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  :root{
+    --box-color: white;
+  }
+  @keyframes dots{
+    0%{
+      transform: rotate(0deg); 
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes blocks{
+    0%{
+      transform: scaleY(1);
+    }
+    20%{
+      transform: scaleY(2);
+    }
+    50%{
+      transform: scaleY(1);
+    }
+  }
+  .first-div{
+    display: flex; 
+  }
+  .first-div{
+    animation: dots 1s ease-in-out infinite;
+  }
+  .last-div{
+    display: flex;
+  }
+  .last-div > div{
+    animation: blocks 1s ease-in-out infinite;
+  }
+  .last-div > div:nth-child(2){
+    animation-delay: 0.1s;
+  }
+  .last-div > div:nth-child(3){
+    animation-delay: 0.2s;
+  }
+  .last-div > div:nth-child(4){
+    animation-delay: 0.3s;
+  }
+  .last-div > div:nth-child(5){
+    animation-delay: 0.4s;
+  }
+  .first-div > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--box-color);
+  }
+  .last-div > div{
+    width: 8px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 70px;
+    background-color: var(--box-color);
+  }

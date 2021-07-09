@@ -1,0 +1,112 @@
+.signUpBody	{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+.signup-box{
+	width: 800px;
+	height: 1050px;
+	margin: 150px 0px; 
+	border: solid 2px #02343F; 
+	border-radius: 25px;
+	background-color: #02343F;
+	font-weight: bold;
+}
+.signup-box h2{
+	margin: 25px 0px 10px 25px;
+	font-size: 25px;
+	color: #F0EDCC;
+}
+.signup-table{
+	margin: 10px 0px 0px 47px;
+	background-color: #FAF3EC;
+	width: 700px;
+	height: 900px;
+	border-radius: 25px;
+	color: black;
+}
+.signup-table label,
+.signup-table div{
+	margin: 30px 0px 20px 20px;
+	
+}
+.signup-required{
+	margin-left: 20px;
+	padding-top: 20px;
+	color: tomato;
+}
+.signup-id-input{
+	margin-left: 55px;
+	margin-top: 50px;
+	height: 20px;
+}
+.signup-pw-input,
+.signup-birth-input,
+.signup-phone-input,
+.signup-school-input,
+.signup-weight-input{
+	margin-left: 40px;
+	height: 20px;
+}
+.signup-pwConfirm-input{
+	margin-left: 6px;
+	height: 20px;
+}
+.signup-name-input,
+.signup-gender-input,
+.signup-address-input1{
+	margin-left: 70px;
+	height: 20px;
+}
+.signup-email-input,
+.signup-workplace-input{
+	margin-left: 55px;
+	height: 20px;
+}
+.signup-address-input2{
+	margin-left: 200px;
+	height: 20px;
+}
+
+.signup-submit{
+	margin: 30px 30px 0px 200px;
+	background-color: #02343F;
+	color: #F0EDCC;
+}
+.signup-submit,
+.signup-cancle{
+	width: 110px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 15px;
+}
+.api-login-title{
+	position: absolute;
+	margin:40px 0px 0px 20px;
+	padding: 10px;
+	border: 2px solid #02343F;
+	border-radius: 20px;
+}
+.api-login-btn{
+	padding-left: 130px;
+	position: relative;
+}
+.api-login-btn img{
+	width: 183px;
+	height: 45px;	
+}
+.second-naver{
+	position: absolute;
+	top: -20px;
+}
+.second-facebook{
+	position: absolute;
+	top: -20px;
+	right: 178px;
+}
+
