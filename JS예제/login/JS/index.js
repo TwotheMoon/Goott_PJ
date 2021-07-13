@@ -18,6 +18,7 @@ const kan = new Member("Kan", "KanisGood", "칸", "ArtistKan@hanmail.net");
 const hoan = new Member("Hoan", "hoan123", "호안", "DancerHoan@naver.com");
 const members = [moon, kan, hoan];
 
+const HIDDEN_CLASSNAME = "hidden";
 
 const idInput = document.getElementById("idInput");
 const pwInput = document.getElementById("pwInput");
@@ -31,38 +32,39 @@ let isFindPw ;
 
 const clock = document.getElementById("clock");
 
-const HIDDEN_CLASSNAME = "hidden";
-
 
 function clickOnLoginBtn(){
+    
+    const logId = localStorage.getItem("userid");
+    const logPw = localStorage.getItem("userpw");
+    const logName = localStorage.getItem("username");
     const userId = idInput.value; 
     const userPw = pwInput.value; 
     isFindId = false;
     isFindPw = false;
-
-    for(let i = 0; i < members.length; i++){
-        if(userId == members[i].id){
-            isFindId = true;
-        }
-    }   // for 끝
+    const parsedLogId = JSON.parse(logId);  // JSON => String 형변환
+    const parsedLogPw = JSON.parse(logPw);
+    const parsedLogName = JSON.parse(logName);
+        
+     if(userId === parsedLogId){
+        isFindId = true;
+    }
+    
     
     if(isFindId == true){
         let userLoginId;
         let userLoginName;
-        let userLoginEmail;
-        for(let i = 0; i < members.length; i++){
-            if(userPw == members[i].pw){
-                isFindPw = true;
-                 userLoginId = members[i].id;
-                 userLoginName = members[i].name;
-                 userLoginEmail = members[i].email;
-            }
-        } 
+        
+        if(userPw == parsedLogPw){
+            isFindPw = true;
+                userLoginId = parsedLogId;
+                userLoginName = parsedLogPw;
+        }
         
             if(isFindPw == true){
                 alert("로그인 성공");
+                onLoginSubmit(parsedLogId, parsedLogName);
                 loginBox.classList.add(HIDDEN_CLASSNAME);
-                onLoginSubmit(userLoginId, userLoginName, userLoginEmail);
                 loginBtn.classList.add(HIDDEN_CLASSNAME);
                 signUpBtn.classList.add(HIDDEN_CLASSNAME);
                 logoutBtn.classList.remove(HIDDEN_CLASSNAME);
@@ -75,11 +77,10 @@ function clickOnLoginBtn(){
 
 }   // clickOnLoginBtn 끝
 
-function onLoginSubmit(userId , name, email){
+function onLoginSubmit(parsedLogId , parsedLogName){
     userInfo.innerText = 
-    `안녕하세요 ${userId}님
-     성명: ${name} 
-     이메일: ${email}`;
+    `안녕하세요 ${parsedLogId}님
+     성명: ${parsedLogName}`;
      userInfo.classList.remove(HIDDEN_CLASSNAME);
 }
 

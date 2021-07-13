@@ -72,88 +72,121 @@
     	<h2> 회원가입 </h2>
     	
     	<form id="signup-form" action="main.html" method="post">
-    		<div class="signup-table">
-				<div>
-    				<p class="signup-required"> *필수 입력 사항</p>
-				</div>
-				<div>
-    				<label> *아이디 </label>
-    				<input class="signup-id-input" type="text" name="userID" placeholder="아이디" size="12"  required> 
-    			</div>
-    			<div>
-    				<label> *패스워드 </label>
-    				<input class="signup-pw-input" type="password" name="password" placeholder="패스워드" size="12" required>
- 				</div>
- 				<div>
-	    			<label> *패스워드 확인 </label>
-	    			<input class="signup-pwConfirm-input" type="password" name="password-confirm" placeholder="패스워드 확인" size="12" required>
-	    		</div>	
-	    		<div>	
-	    			<label> *이름 </label> 
-	    			<input class="signup-name-input" type="text" name="name" placeholder="이름" size="6" required>
-	    		</div> 
-	    		<div>	
-	    			<label> 성별 </label> 
-	    			<input class="signup-gender-input" type="radio" name="gender" placeholder="성별" checked="checked"> 남 
-	    			<input type="radio" name="" placeholder="성별"> 여 
-	    		</div>
-	    		<div>
-	    			<label> 생년월일 </label>
-	    			<input class="signup-birth-input" type="text" name="birthyy" placeholder="년도(4자리)" maxlength="4" size="6"> 년 &nbsp;&nbsp;
-					<input type="text" name="birthmm" placeholder="월(2자리)" maxlength="2" size="4"> 월 &nbsp;&nbsp;
-					<input type="text" name="birthdd" placeholder="일(2자리)" maxlength="2" size="4"> 일 &nbsp;&nbsp;
-				</div>
-	    		<div>	
-	    			<label> 전화변호 </label>
-	    			<input class="signup-phone-input" type="text" name="phone1" size="2" maxlength="3"> -
-	    			<input type="text" name="phone2" size="4" maxlength="4"> -
-	   				<input type="text" name="phone3" size="4" maxlength="4">	
-	   			</div>
-	   			<div>	
-	   				<label> 이메일 </label>	 
-	    			<input class="signup-email-input" type="text" name="email1" placeholder="이메일" size="10">@ 				
-	    			<select name="email2">
-	    				<option>직접입력</option>
-	    				<option>naver.com</option>
-	    				<option>gmail.com</option>
-	    				<option>daum.net</option>
-	    			</select>
-	    		</div>
-	   			<div>	
-	   				<label> 주소 </label>
-	   				<input class="signup-address-input1" type="button" onclick="sample4_execDaumPostcode()" value="주소검색"> 
-	   				<input type="text" id="sample4_roadAddress" placeholder="도로명주소" name="roadAddress"> 
-	   				<input type="text" id="sample4_detailAddress" placeholder="상세주소" name="detailAddress">
-	   				<input type="text" id="sample4_postcode" placeholder="우편번호" name="postcode" size="6">
-	     		</div>
-	     		<div>
-	     			<input class="signup-address-input2" type="text" id="sample4_jibunAddress" placeholder="지번주소" name="jibunAddress">
-					<input type="text" id="sample4_extraAddress" placeholder="참고항목" name="extraAddress">
-                 </div>
-	   			<div>
-    				<input class="signup-submit" type="submit" value="등록">
-    				<input class="signup-cancle" type="reset" value="취소">
-    			</div>
-				
-				<span class="api-login-title"> SNS 로그인 </span>
+    		<table class="signup-table">
+				<tr>
+					<td class="table-title">
+    					<p class="signup-required"> *필수 입력 사항</p>
+					</td>
+				</tr>
+				<tr>
+    				<td class="table-title"> *아이디 </td>
+    				<td class="table-contants">
+						<input class="signup-id-input" type="text" name="userID" placeholder="아이디" size="12"  required> 
+					</td>
+				</tr>
+    			<tr>
+    				<td class="table-title"> *패스워드 </td>
+    				<td class="table-contants">
+						<input class="signup-pw-input" type="password" name="password" placeholder="패스워드" size="12" required>
+					</td>
+				</tr>
+ 				<tr>
+	    			<td class="table-title"> *패스워드 확인 </td>
+					<td class="table-contants">
+					<input class="signup-pwConfirm-input" type="password" name="password-confirm" placeholder="패스워드 확인" size="12">
+					</td>
+				</tr>	
+	    		<tr>	
+	    			<td class="table-title"> *이름 </td> 
+					<td class="table-contants">	
+						<input class="signup-name-input" type="text" name="name" placeholder="이름" size="6" required>
+					</td>
+				</tr> 
+	    		<tr>	
+	    			<td class="table-title"> 성별 </td> 
+	    			<td class="table-contants">
+						<input class="signup-gender-input" type="radio" name="gender" placeholder="성별" checked="checked"> 남 
+						<input type="radio" name="" placeholder="성별"> 여 
+					</td>
+				</tr>
+	    		<tr>
+	    			<td class="table-title"> 생년월일 </td>
+	    			<td class="table-contants">
+						<input class="signup-birth-input" type="text" name="birthyy" placeholder="년도(4자리)" maxlength="4" size="6"> 년 &nbsp;&nbsp;
+						<input type="text" name="birthmm" placeholder="월(2자리)" maxlength="2" size="4"> 월 &nbsp;&nbsp;
+						<input type="text" name="birthdd" placeholder="일(2자리)" maxlength="2" size="4"> 일 &nbsp;&nbsp;
+					</td>
+				</tr>
+	    		<tr>	
+	    			<td class="table-title"> 전화변호 </td>
+	    			<td class="table-contants">
+						<input class="signup-phone-input" type="text" name="phone1" size="2" maxlength="3"> -
+						<input type="text" name="phone2" size="4" maxlength="4"> -
+						<input type="text" name="phone3" size="4" maxlength="4">	
+					</td>
+				</tr>
+	   			<tr>	
+	   				<td class="table-title"> 이메일 </td>	 
+	    			<td class="table-contants">
+						<input class="signup-email-input" type="text" name="email1" placeholder="이메일" size="10">@ 				
+						<select name="email2">
+							<option>직접입력</option>
+							<option>naver.com</option>
+							<option>gmail.com</option>
+							<option>daum.net</option>
+						</select>
+					</td>
+				</tr>
+	   			<tr>	
+	   				<td class="table-title"> 주소 </td>
+					<td class="table-contants">	
+					    <input class="signup-address-input1" type="button" onclick="sample4_execDaumPostcode()" value="주소검색"> 
+						<input type="text" id="sample4_roadAddress" placeholder="도로명주소" name="roadAddress"> 
+						<input type="text" id="sample4_detailAddress" placeholder="상세주소" name="detailAddress">
+						<input type="text" id="sample4_postcode" placeholder="우편번호" name="postcode" size="6">
+						<input class="signup-address-input2" type="text" id="sample4_jibunAddress" placeholder="지번주소" name="jibunAddress">
+						<input type="text" id="sample4_extraAddress" placeholder="참고항목" name="extraAddress">
+					</td>	
+				</tr>
+	   			<tr>
+					<td>
+						<input class="signup-submit" type="submit" value="회원가입">
+					</td>
+					<td>
+						<input class="signup-cancle" type="reset" value="다시입력">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="api-login-title"> SNS 로그인 </span>
+					</td>
+				</tr>
 				<!-- 서버 환경이 아니여서 api 대신 링크 대체 -->
-				<div class="api-login-btn">
-					<a href="https://accounts.google.com/signout/chrome/landing?continue=https://accounts.google.com/ServiceLogin?elo%3D1">
-						<img src="img/google_login.png">
-					</a>
-					<a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25%26service%3D8">
-						<img src="img/kakao_login.png">
-					</a>
-				</div>
-				<div class="api-login-btn">
-					<a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
-						<img class="second-naver" src="img/naver_login.png">
-					</a>
-					<a href="https://www.facebook.com/">
-						<img class="second-facebook" src="img/facebook_login.png">
-					</a>
-				</div>
-    		</div>
+				<tr class="api-login-btn">
+					<td class="table-contants_api">
+						<a href="https://accounts.google.com/signout/chrome/landing?continue=https://accounts.google.com/ServiceLogin?elo%3D1">
+							<img src="img/google_login.png">
+						</a>
+					</td>
+					<td >
+						<a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25%26service%3D8">
+							<img src="img/kakao_login.png">
+						</a>
+					</td>
+				</tr>
+				<tr class="api-login-btn">
+					<td class="table-contants_api">
+						<a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+							<img class="second-naver" src="img/naver_login.png">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.facebook.com/">
+							<img class="second-facebook" src="img/facebook_login.png">
+						</a>
+					</td>
+				</tr>
+    		</table>
     	</form>
     </div>
 </body>
