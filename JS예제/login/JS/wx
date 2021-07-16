@@ -5,15 +5,15 @@ const signUpPwInput = document.querySelector(".signup-pw-input");
 const signUpPwConfirmInput = document.querySelector(".signup-pwConfirm-input");
 const signupSubmitBtn = document.querySelector(".signup-submit");
 const signupNameInput = document.querySelector(".signup-name-input");
-const signupGender = document.querySelector(".signup-gender-input");
-const signupBirthYY = document.querySelector(".signup-birthyy-input");
-const signupBirthMM = document.querySelector(".signup-birthmm-input");
-const signupBirthDD = document.querySelector(".signup-birthdd-input");
-const signupPhone1 = document.querySelector(".signup-phone1-input");
-const signupPhone2 = document.querySelector(".signup-phone2-input");
-const signupPhone3 = document.querySelector(".signup-phone3-input");
-const signupEmail1 = document.querySelector(".signup-email1-input");
-const signupEmail2 = document.querySelector(".signup-email2-input");
+const signupGender = document.querySelector(".gender");
+const signupBirthYY = document.querySelector(".birthyy");
+const signupBirthMM = document.querySelector(".birthmm");
+const signupBirthDD = document.querySelector(".birthdd");
+const signupPhone1 = document.querySelector(".phone1");
+const signupPhone2 = document.querySelector(".phone2");
+const signupPhone3 = document.querySelector(".phone3");
+const signupEmail1 = document.querySelector("email1");
+const signupEmail2 = document.querySelector("email2");
 
 const USERID_KEY = "userid";     
 const USERPW_KEY = "userpw";    
@@ -32,7 +32,7 @@ function onSignupSubmit(event){     // 회원가입 submit 에 대한 함수
     const userbirthyy = signupBirthYY.value;
     const userbirthmm = signupBirthMM.value;
     const userbirthdd = signupBirthDD.value;
-    const userbirth = userbirthyy + userbirthmm + userbirthdd;
+    const userbirth = userbirthyy + userbirthMM + userbirthyy;
     const userphone1 = signupPhone1.value;
     const userphone2 = signupPhone2.value;
     const userphone3 = signupPhone3.value;
@@ -66,7 +66,7 @@ function onSignupSubmit(event){     // 회원가입 submit 에 대한 함수
         event.preventDefault();
 
     } else if(confirmPhone(userphone1, userphone2, userphone3) == 1){
-        alert("검색되지 않는 지역번호입니다.");
+        alert("검색되지 않는 지역번호입니다.")
         event.preventDefault();
 
     } else if(confirmPhone(userphone1, userphone2, userphone3) == 2){
@@ -74,7 +74,7 @@ function onSignupSubmit(event){     // 회원가입 submit 에 대한 함수
         event.preventDefault();
 
     } else if(confirmPhone(userphone1, userphone2, userphone3) == 3){
-        alert("휴대폰 번호 뒷자리 4글자 입력해주세요.");
+        alert("휴대폰 번호 뒷자리 4글자 입력해주세요.")
         event.preventDefault();
 
     } else {

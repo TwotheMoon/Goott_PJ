@@ -38,6 +38,10 @@ function clickOnLoginBtn(){
     const logId = localStorage.getItem("userid");
     const logPw = localStorage.getItem("userpw");
     const logName = localStorage.getItem("username");
+    const logGender = localStorage.getItem("usergender");
+    const logBirth = localStorage.getItem("userbirth");
+    const logPhone = localStorage.getItem("userphone");
+    const logEmail = localStorage.getItem("useremail");
     const userId = idInput.value; 
     const userPw = pwInput.value; 
     isFindId = false;
@@ -45,6 +49,10 @@ function clickOnLoginBtn(){
     const parsedLogId = JSON.parse(logId);  // JSON => String 형변환
     const parsedLogPw = JSON.parse(logPw);
     const parsedLogName = JSON.parse(logName);
+    const parsedLogGender = JSON.parse(logGender);
+    const parsedLogBirth = JSON.parse(logBirth);
+    const parsedLogPhone = JSON.parse(logPhone);
+    const parsedLogEmail = JSON.parse(logEmail);
         
      if(userId === parsedLogId){
         isFindId = true;
@@ -63,7 +71,7 @@ function clickOnLoginBtn(){
         
             if(isFindPw == true){
                 alert("로그인 성공");
-                onLoginSubmit(parsedLogId, parsedLogName);
+                onLoginSubmit(parsedLogId, parsedLogName, parsedLogGender, parsedLogBirth, parsedLogPhone, parsedLogEmail );
                 loginBox.classList.add(HIDDEN_CLASSNAME);
                 loginBtn.classList.add(HIDDEN_CLASSNAME);
                 signUpBtn.classList.add(HIDDEN_CLASSNAME);
@@ -77,10 +85,16 @@ function clickOnLoginBtn(){
 
 }   // clickOnLoginBtn 끝
 
-function onLoginSubmit(parsedLogId , parsedLogName){
+function onLoginSubmit(parsedLogId , parsedLogName, parsedLogGender, parsedLogBirth, parsedLogPhone, parsedLogEmail ){
     userInfo.innerText = 
     `안녕하세요 ${parsedLogId}님
-     성명: ${parsedLogName}`;
+     성명: ${parsedLogName}
+     성별: ${parsedLogGender}
+     생년월일: ${parsedLogBirth}
+     핸드폰번호: ${parsedLogPhone}
+     이메일: ${parsedLogEmail} 
+     `;
+
      userInfo.classList.remove(HIDDEN_CLASSNAME);
 }
 
