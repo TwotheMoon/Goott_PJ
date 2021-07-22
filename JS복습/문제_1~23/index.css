@@ -1,0 +1,8 @@
+#popup{
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
